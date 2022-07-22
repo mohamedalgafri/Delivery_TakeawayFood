@@ -1,0 +1,317 @@
+@import 'variables';
+@import 'mixin';
+
+.box_order_form {
+    @include border-radius(5px);
+    margin-bottom: 25px;
+    background-color: #fff;
+    overflow: hidden;
+    @include box-shadow (0px 0px 15px 0px rgba(0, 0, 0, 0.10));
+
+    .head {
+        text-align: left;
+        padding: 15px 20px 12px 25px;
+        background-color: #454545;
+        color: #fff;
+
+        h3 {
+            @include fontSize(18px);
+            margin: 0;
+            color: #fff;
+        }
+
+        small {
+            display: block;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+    .main {
+        padding: 20px 25px 10px 25px;
+    }
+
+    .form-group {
+        input {
+            padding-right: 10px;
+        }
+
+        i {
+            @include fontSize(16px);
+            position: absolute;
+            right: 3px;
+            top: 12px;
+            color: #ccc;
+            width: 25px;
+            height: 25px;
+            display: block;
+            font-weight: 400 !important;
+
+            &.icon_mail {
+                top: 10px;
+            }
+        }
+    }
+}
+
+.payment_select {
+    background-color: #eeeeee;
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 20px;
+    @include border-radius(3px);
+
+    label {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    i {
+        float: right;
+        font-size: 24px;
+    }
+
+    &#paypal {
+        background: #eeeeee url(../img/paypal_2.svg) center right no-repeat;
+    }
+}
+
+#confirm {
+    text-align: center;
+    padding: 60px 15px;
+}
+
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+.inlinesvg .svg svg {
+    display: inline;
+}
+
+.icon--order-success svg path {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+    animation: checkmark-circle 0.6s ease-in-out backwards
+}
+
+#register_bg {
+    background: #ccc url(../img/access_bg.jpg) center center no-repeat fixed;
+    @include background-size(cover);
+    min-height: 100vh;
+    width: 100%;
+}
+
+#register {
+    figure {
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid $border-color-2;
+        padding: 0 60px 30px 60px;
+
+        @include mobile {
+            margin: -30px -30px 20px -30px;
+            padding: 20px 30px;
+        }
+    }
+
+    @include box-shadow (3px 0 30px rgba(0, 0, 0, 0.20));
+    width: 430px;
+    padding: 30px 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: #fff;
+    min-height: 100vh;
+
+    @include mobile {
+        width: 100%;
+        padding: 30px;
+        @include box-shadow (none);
+    }
+
+    form {
+        margin-bottom: 30px;
+        display: block;
+
+        .form-group {
+            input {
+                padding-left: 40px;
+            }
+
+            i {
+                @include fontSize(18px);
+                position: absolute;
+                left: 12px;
+                top: 9px;
+                color: #ccc;
+                width: 25px;
+                height: 25px;
+                display: block;
+                font-weight: 400 !important;
+
+                &.icon_lock_alt {
+                    top: 10px;
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        position: absolute;
+        padding-top: 10px;
+        height: 30px;
+        left: 0;
+        bottom: 30px;
+        width: 100%;
+        color: #999;
+    }
+}
+
+.access_social {
+    margin-top: 40px;
+
+    @include mobile {
+        margin-top: 30px;
+    }
+}
+
+.divider {
+    text-align: center;
+    height: 1px;
+    margin: 30px 0 15px 0;
+    background-color: $border-color-2;
+
+    span {
+        position: relative;
+        top: -20px;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px;
+        font-style: italic;
+    }
+}
+
+a.social_bt {
+    @include border-radius(3px);
+    text-align: center;
+    color: #fff;
+    min-width: 200px;
+    margin-bottom: 5px;
+    display: block;
+    padding: 12px;
+    line-height: $line-height-none;
+    position: relative;
+    @include transition-default;
+    cursor: pointer;
+
+    &:hover {
+        -webkit-filter: brightness(115%);
+        filter: brightness(115%);
+    }
+}
+
+/*Password strength */
+#pass-info {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+    @include fontSize(12px);
+    padding: 5px 3px 3px 3px;
+    @include border-radius(3px);
+
+    &.weakpass {
+        border: 1px solid #FF9191;
+        background: #FFC7C7;
+        color: #94546E;
+    }
+
+    &.stillweakpass {
+        border: 1px solid #FBB;
+        background: #FDD;
+        color: #945870;
+    }
+
+    &.goodpass {
+        border: 1px solid #C4EEC8;
+        background: #E4FFE4;
+        color: #51926E;
+    }
+
+    &.strongpass {
+        border: 1px solid #6ED66E;
+        background: #79F079;
+        color: #348F34;
+    }
+
+    &.vrystrongpass {
+        border: 1px solid #379137;
+        background: #48B448;
+        color: #CDFFCD;
+    }
+}

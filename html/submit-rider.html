@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FooYes - Quality delivery or takeaway food">
+    <meta name="author" content="Ansonika">
+    <title>FooYes - Quality delivery or takeaway food</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="css/wizard.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+				
+	<header class="header clearfix element_to_stick">
+        <div class="container">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" width="162" height="35" alt="" class="logo_normal">
+                    <img src="img/logo_sticky.svg" width="162" height="35" alt="" class="logo_sticky">
+                </a>
+            </div>
+            <div class="layer"></div><!-- Opacity Mask Menu Mobile -->
+            <ul id="top_menu">
+                <li><a href="#sign-in-dialog" id="sign-in" class="login">Sign In</a></li>
+                <li><a href="#0" class="wishlist_bt_top" title="Your wishlist">Your wishlist</a></li>
+            </ul>
+            <!-- /top_menu -->
+            <a href="#0" class="open_close">
+                <i class="icon_menu"></i><span>Menu</span>
+            </a>
+            <nav class="main-menu">
+                <div id="header_menu">
+                    <a href="#0" class="open_close">
+                        <i class="icon_close"></i><span>Menu</span>
+                    </a>
+                    <a href="index.html"><img src="img/logo.svg" width="162" height="35" alt=""></a>
+                </div>
+                <ul>
+                   <li class="submenu">
+                        <a href="#0" class="show-submenu">Home</a>
+                        <ul>
+                            <li><a href="index.html">Address Autocomplete</a></li>
+                            <li><a href="index-2.html">Search by Keyword</a></li>
+                            <li><a href="index-3.html">Home Version 2</a></li>
+                            <li><a href="index-4.html">Video Bg Fallback Mobile</a></li>
+                            <li class="third-level"><a href="#0">Sliders - Parallax <strong>New!</strong></a>
+                                <ul>
+                                    <li><a href="index-6.html">Owl Carousel</a></li>
+                                    <li><a href="index-7.html">Revolution Slider 1</a></li>
+                                    <li><a href="index-8.html">Revolution Slider 2</a></li>
+                                    <li><a href="index-9.html">Youtube/Vimeo Parallax</a></li>
+                                    <li><a href="index-10.html">MP4 Video Parallax</a></li>
+                                    <li><a href="index-11.html">Parallax Image</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index-12.html">Text Rotator <strong>New!</strong></a></li>
+                            <li><a href="index-5.html">GDPR Cookie Bar EU Law</a></li>
+                            <li><a href="header-user-logged.html">Header User Logged</a></li>
+                            <li><a href="header-cart-top.html">Header Cart Top</a></li>
+                            <li><a href="modal-advertise.html">Modal 1 Cookie Session</a></li>
+                            <li><a href="modal-newsletter.html">Modal 2 Cookie Session</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#0" class="show-submenu">Listing</a>
+                        <ul>
+                            <li class="third-level"><a href="#0">List pages</a>
+                                <ul>
+                                    <li><a href="grid-listing-filterscol.html">List default</a></li>
+                                    <li><a href="grid-listing-filterscol-map.html">List with map</a></li>
+                                    <li><a href="listing-map.html">List side map</a></li>
+                                    <li><a href="grid-listing-masonry.html">List Masonry Filter</a></li>
+                                </ul>
+                            </li>
+                            <li class="third-level"><a href="#0">Detail pages</a>
+                               <ul>
+                                    <li><a href="detail-restaurant.html">Detail page 1</a></li>
+                                    <li><a href="detail-restaurant-2.html">Detail page 2</a></li>
+                                    <li><a href="detail-restaurant-3.html">Detail page 3</a></li>
+                                    <li><a href="detail-restaurant-4.html">Detail page 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="third-level"><a href="#0">OpenStreetMap</a>
+                                <ul>
+                                    <li><a href="grid-listing-filterscol-openstreetmap.html">List with map</a></li>
+                                    <li><a href="listing-map-openstreetmap.html">List side map</a></li>
+                                    <li><a href="grid-listing-masonry-openstreetmap.html">List Masonry Filter</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="submit-restaurant.html">Submit Restaurant</a></li>
+                            <li><a href="submit-rider.html">Submit Rider</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="confirm.html">Confirm Order</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#0" class="show-submenu">Other Pages</a>
+                       <ul>
+				        <li><a href="admin_section/index.html" target="_blank">Admin Section</a></li>
+				        <li><a href="404.html">404 Error</a></li>
+				        <li><a href="help.html">Help and Faq</a></li>
+				        <li><a href="blog.html">Blog</a></li>
+				        <li><a href="leave-review.html">Leave a review</a></li>
+				        <li><a href="contacts.html">Contacts</a></li>
+				        <li><a href="coming_soon/index.html">Coming Soon</a></li>
+				        <li><a href="login.html">Sign In</a></li>
+				        <li><a href="register.html">Sign Up</a></li>
+				        <li><a href="icon-pack-1.html">Icon Pack 1</a></li>
+				        <li><a href="icon-pack-2.html">Icon Pack 2</a></li>
+				        <li><a href="shortcodes.html">Shortcodes</a></li>
+				    </ul>
+                    </li>
+                    <li><a href="#0">Buy this template</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+	
+	<main>
+		<div class="hero_single inner_pages background-image" data-background="url(img/hero_submit_2.jpg)">
+			<div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-9 col-lg-10 col-md-8">
+							<h1>Become a FooYes Rider</h1>
+							<p>Flexible work, competitive fees</p>
+							<a href="#apply" class="btn_1 gradient btn_scroll">Apply Now</a>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+			</div>
+			<div class="wave hero gray"></div>
+		</div>
+		<!-- /hero_single -->
+
+		<div class="bg_gray">
+			<div class="container margin_30_40">			
+			<div class="main_title center">
+				<span><em></em></span>
+				<h2>Why Work with Us</h2>
+				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+			</div>
+
+			<div class="row justify-content-center add_bottom_45">
+				<div class="col-lg-4 col-md-6">
+					<div class="box_topic submit">
+						<figure><img src="img/icon_submit_1.svg" alt="" width="110" height="100"></figure>
+						<h3>Your compensation</h3>
+						<p>What you earn per order depends on your experience and ratings.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="box_topic submit">
+						<figure><img src="img/icon_submit_2.svg" alt="" width="110" height="100"></figure>
+						<h3>Choose when to work</h3>
+						<p>You’ll be self-employed and free to work to your own availability.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="box_topic submit">
+						<figure><img src="img/icon_submit_3.svg" alt="" width="110" height="100"></figure>
+						<h3>You will only need</h3>
+						<p>Your vehicle (motorcycle, bike or car), an iPhone or Android device.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
+
+			<div class="row justify-content-center">
+				<div class="col-lg-8 col-md-10">
+					<div class="main_title center">
+						<h3 style="margin-bottom: 0;">Frequent questions</h3>
+						<p>Here you'll be able find answers your questions</p>
+					</div>
+
+					<div role="tablist" class="add_bottom_15 accordion_2" id="accordion_group">
+						<div class="card">
+							<div class="card-header" role="tab">
+								<h5>
+									<a data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true"><i class="indicator icon_minus-06"></i>Introdocution</a>
+								</h5>
+							</div>
+
+							<div id="collapseOne" class="collapse show" role="tabpanel" data-bs-parent="#accordion_group">
+								<div class="card-body">
+									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+						<!-- /card -->
+						<div class="card">
+							<div class="card-header" role="tab">
+								<h5>
+									<a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+										<i class="indicator icon_plus"></i>Generative Modeling Review
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" role="tabpanel" data-bs-parent="#accordion_group">
+								<div class="card-body">
+									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+								</div>
+							</div>
+						</div>
+						<!-- /card -->
+						<div class="card">
+							<div class="card-header" role="tab">
+								<h5>
+									<a class="collapsed" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false">
+										<i class="indicator icon_plus"></i>Variational Autoencoders
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" role="tabpanel" data-bs-parent="#accordion_group">
+								<div class="card-body">
+									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+								</div>
+							</div>
+						</div>
+						<!-- /card -->
+					</div>
+					<!-- /accordion group -->
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /bg_gray -->
+
+		<div class="container margin_60_40" id="apply">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-8">
+					<div class="main_title center">
+						<span><em></em></span>
+						<h2>Apply Now</h2>
+						<p>Note that you must be over 18 years old</p>
+					</div>
+
+					<div id="wizard_container">
+					<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<form id="wrapped" method="POST">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+
+								<div class="step">
+									<h3 class="main_question"><strong>1/5</strong>Where would you like to work?</h3>
+									<div class="form-group">
+										<div class="custom_select clearfix">
+											<select class="wide required" name="location">
+												<option value="">Your City</option>
+												<option value="London">London</option>
+												<option value="Paris">Paris</option>
+												<option value="Madrid">Madrid</option>
+												<option value="Berlin">Berlin</option>
+												<option value="Rome">Rome</option>                             
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="step">
+									<h3 class="main_question"><strong>3/5</strong>What's your vehicle type?</h3>
+									<div class="form-group">
+										<label class="container_radio version_2">Bicycle
+											<input type="radio" name="vehicle" value="Bicycle" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">Scooter
+											<input type="radio" name="vehicle" value="Scooter" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">Car
+											<input type="radio" name="vehicle" value="Car" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<p>
+										<strong><i class="icon_info"></i> Note</strong><br>
+										Lorem ipsum dolor sit amet, per ex tollit honestatis, vis aeque tantas at, et his summo inermis conceptam. Mazim accusamus ut mea. Tritani legimus patrioque no per.
+									</p>
+								</div>
+								<!-- /step-->
+
+								<div class="step">
+									<h3 class="main_question"><strong>4/5</strong>How did you hear about us?</h3>
+									<div class="form-group">
+										<label class="container_check version_2">Google Search Engine
+											<input type="checkbox" name="how_hear[]" value="Google Search Engine" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">A friend of mine
+											<input type="checkbox" name="how_hear[]" value="A friend of mine" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">Print Advertise
+											<input type="checkbox" name="how_hear[]" value="Print Advertise" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">Newspaper
+											<input type="checkbox" name="how_hear[]" value="Newspaper" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">Other
+											<input type="checkbox" name="how_hear[]" value="Other" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+								<!-- /step-->
+
+								<div class="submit step">
+									<h3 class="main_question"><strong>5/5</strong>Tell us about yourself</h3>
+									<div class="form-group">
+										<input type="text" name="firstname" class="form-control required" placeholder="First and Last Name">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" class="form-control required" placeholder="Your Email">
+									</div>
+									<div class="form-group">
+										<input type="text" name="telephone" class="form-control required" placeholder="Your Telephone">
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<div class="form-group">
+												<input type="text" name="age" class="form-control required" placeholder="Age">
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="form-group radio_input">
+												<label class="container_radio">Male
+													<input type="radio" name="gender" value="Male" class="required">
+													<span class="checkmark"></span>
+												</label>
+												<label class="container_radio">Female
+													<input type="radio" name="gender" value="Female" class="required">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<div class="form-group terms">
+										<label class="container_check">Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a>
+											<input type="checkbox" name="terms" value="Yes" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+								<!-- /step-->
+
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Prev</button>
+								<button type="button" name="forward" class="forward">Next</button>
+								<button type="submit" name="process" class="submit">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->	
+		</div>
+		<!-- /container -->
+		
+	</main>
+	<!-- /main -->
+
+	<footer>
+        <div class="wave footer"></div>
+        <div class="container margin_60_40 fix_mobile">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_1">Quick Links</h3>
+                    <div class="collapse dont-collapse-sm links" id="collapse_1">
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="submit-restaurant.html">Add your restaurant</a></li>
+                            <li><a href="help.html">Help</a></li>
+                            <li><a href="register.html">My account</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 data-bs-target="#collapse_2">Categories</h3>
+                    <div class="collapse dont-collapse-sm links" id="collapse_2">
+                        <ul>
+                            <li><a href="grid-listing-filterscol.html">Top Categories</a></li>
+                            <li><a href="grid-listing-filterscol-full-masonry.html">Best Rated</a></li>
+                            <li><a href="grid-listing-filterscol-full-width.html">Best Price</a></li>
+                            <li><a href="grid-listing-filterscol-full-masonry.html">Latest Submissions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                        <h3 data-bs-target="#collapse_3">Contacts</h3>
+                    <div class="collapse dont-collapse-sm contacts" id="collapse_3">
+                        <ul>
+                            <li><i class="icon_house_alt"></i>97845 Baker st. 567<br>Los Angeles - US</li>
+                            <li><i class="icon_mobile"></i>+94 423-23-221</li>
+                            <li><i class="icon_mail_alt"></i><a href="#0">info@domain.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                        <h3 data-bs-target="#collapse_4">Keep in touch</h3>
+                    <div class="collapse dont-collapse-sm" id="collapse_4">
+                        <div id="newsletter">
+                            <div id="message-newsletter"></div>
+                            <form method="post" action="assets/newsletter.php" name="newsletter_form" id="newsletter_form">
+                                <div class="form-group">
+                                    <input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Your email">
+                                    <button type="submit" id="submit-newsletter"><i class="arrow_carrot-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="follow_us">
+                            <h5>Follow Us</h5>
+                            <ul>
+                                <li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/twitter_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/facebook_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/instagram_icon.svg" alt="" class="lazy"></a></li>
+                                <li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/youtube_icon.svg" alt="" class="lazy"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /row-->
+            <hr>
+            <div class="row add_bottom_25">
+                <div class="col-lg-6">
+                    <ul class="footer-selector clearfix">
+                        <li>
+                            <div class="styled-select lang-selector">
+                                <select>
+                                    <option value="English" selected>English</option>
+                                    <option value="French">French</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Russian">Russian</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="styled-select currency-selector">
+                                <select>
+                                    <option value="US Dollars" selected>US Dollars</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/cards_all.svg" alt="" width="230" height="35" class="lazy"></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="additional_links">
+                        <li><a href="#0">Terms and conditions</a></li>
+                        <li><a href="#0">Privacy</a></li>
+                        <li><span>© FooYes</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+
+	<div id="toTop"></div><!-- Back to top button -->
+		
+	<!-- Sign In Modal -->
+	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="modal_header">
+			<h3>Sign In</h3>
+		</div>
+		<form>
+			<div class="sign-in-wrapper">
+				<a href="#0" class="social_bt facebook">Login with Facebook</a>
+				<a href="#0" class="social_bt google">Login with Google</a>
+				<div class="divider"><span>Or</span></div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" name="email" id="email">
+					<i class="icon_mail_alt"></i>
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" id="password" value="">
+					<i class="icon_lock_alt"></i>
+				</div>
+				<div class="clearfix add_bottom_15">
+					<div class="checkboxes float-start">
+						<label class="container_check">Remember me
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+				</div>
+				<div class="text-center">
+					<input type="submit" value="Log In" class="btn_1 full-width mb_5">
+					Don’t have an account? <a href="register.html">Sign up</a>
+				</div>
+				<div id="forgot_pw">
+					<div class="form-group">
+						<label>Please confirm login email below</label>
+						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
+						<i class="icon_mail_alt"></i>
+					</div>
+					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+				</div>
+			</div>
+		</form>
+		<!--form -->
+	</div>
+	<!-- /Sign In Modal -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.min.js"></script>
+    <script src="js/common_func.js"></script>
+    <script src="assets/validate.js"></script>
+
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="js/wizard/wizard_scripts.js"></script>
+    <script src="js/wizard/wizard_func.js"></script>
+
+</body>
+</html>

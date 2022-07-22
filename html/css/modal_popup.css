@@ -1,0 +1,98 @@
+/* Advertise and newsletter popup */
+.cookie_popup {
+  display: none !important;
+}
+
+.popup_wrapper {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: 9999999;
+  opacity: 0;
+}
+.popup_wrapper .popup_content {
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 500px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 767px) {
+  .popup_wrapper .popup_content {
+    width: 300px;
+  }
+}
+.popup_wrapper .popup_content .content {
+  height: 100%;
+  position: relative;
+}
+.popup_wrapper .popup_content.newsletter_c {
+  width: 800px;
+}
+@media (max-width: 767px) {
+  .popup_wrapper .popup_content.newsletter_c {
+    width: 300px;
+  }
+}
+.popup_wrapper .popup_content.newsletter_c figure {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.popup_wrapper .popup_content.newsletter_c figure img {
+  height: 100%;
+  width: auto;
+}
+.popup_wrapper .popup_content.newsletter_c .content {
+  height: 100%;
+  padding: 120px 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .popup_wrapper .popup_content.newsletter_c .content {
+    padding: 30px 30px 15px 30px;
+    height: auto;
+  }
+}
+.popup_wrapper .popup_content.newsletter_c .content .wrapper {
+  width: 100%;
+}
+.popup_wrapper .popup_content.newsletter_c .content .wrapper h3 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-top: 25px;
+}
+.popup_wrapper .popup_close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 9999;
+  font-size: 28px;
+  font-size: 1.75rem;
+  color: #555;
+  cursor: pointer;
+}
+.popup_wrapper .popup_close:hover {
+  color: #222;
+}

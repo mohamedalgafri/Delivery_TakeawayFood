@@ -1,0 +1,169 @@
+@import 'variables';
+@import 'mixin';
+
+/*Why*/
+.box_about {
+  padding: 45px 45px 30px 45px;
+  position: relative;
+  @include tablet {padding: 20px 0 0 0; text-align: center; margin-bottom: 0;}
+  @include border-radius(5px);
+  h2, h3 {
+    font-weight: 500;
+    @include fontSize(28px);
+    color: $color-1;
+    @include mobile {@include fontSize(24px);}
+  }
+  p {
+    @include fontSize(15px);
+    color: #777;
+    line-height: 1.6;
+    &.lead {
+      @include fontSize(24px);
+      margin-bottom: 15px;
+      @include mobile {@include fontSize(21px);}
+    }
+  }
+  .arrow_1, .arrow_2  {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 9;
+    @include desktop {display: none;}
+  }
+  .arrow_2 {
+    left: 0;
+     -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+  }
+}
+
+/*Pricing tables*/
+.plans {
+    margin: 0px auto 20px;
+}
+
+.plans:before,
+.plans:after {
+    content: '';
+    display: table;
+}
+
+.plans:after {
+    clear: both;
+}
+
+.plan {
+    margin: 10px 0;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    border: solid $border-color-2;
+    border-width: 1px 0 1px 1px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    @include border-radius(5px);
+    overflow: hidden;
+
+    @include tablet {
+        border-width: 1px;
+    }
+}
+
+.col-md-4.plan:first-child {
+    margin-right: -5px;
+    margin-left: 5px;
+
+    @include tablet {
+        margin: 0 0 15px 0;
+    }
+}
+
+.plan:last-child {
+    border-width: 1px;
+}
+
+.plan-title {
+    position: relative;
+    margin: -25px -25px 30px -25px;
+    padding: 30px 20px 5px 20px;
+    border-bottom: 1px dotted #ccc;
+    @include fontSize(16px);
+    background-color: #f8f8f8;
+    color: #777;
+
+    h3 {
+        margin-bottom: 0;
+    }
+}
+
+.plan-tall .plan-title {
+    background-color: $color-1;
+    border-bottom: none;
+    color: #fff;
+
+    h3 {
+        color: #fff;
+    }
+}
+
+.plan-price {
+    margin: 0 auto 15px;
+    width: 110px;
+    height: 110px;
+    line-height: 115px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background: #777;
+    @include border-radius(100px);
+    display: inline-block;
+    text-align: center;
+}
+
+.plan-price>span {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.plan-features {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+ul.plan-features {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.plan-features li {
+    list-style: none;
+}
+
+.plan-tall {
+    margin: 0;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: -5px;
+    position: relative;
+    z-index: 100;
+    border: solid $color-1;
+    position: relative;
+}
+
+.plan-tall>.plan-price {
+    height: 130px;
+    width: 130px;
+    line-height: 135px;
+    font-size: 36px;
+    background: $color-1;
+    @include border-radius(130px);
+}
+
+.plan-tall+.plan {
+    border-left: 0;
+}

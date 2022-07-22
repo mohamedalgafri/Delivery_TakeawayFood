@@ -1,0 +1,35 @@
+//-------------------- Base Colors --------------------//
+$body-color: 					#fff;
+$body-text-color:               #444;
+$heading-color:                 #222;
+
+$color-1: 						#e54750;
+$color-2: 						#f3723b;
+$color-3: 						#b3bac4;
+$color-4: 						#121921;
+$color-5: 						#FFC107;
+$color-6: 						#66cc66;
+
+$block-reveal-color-1: 			$color-2;
+
+$border-color-2: 			    #ededed;
+$border-color-3: 			    #d2d8dd;
+$border-color-4: 			    #ccc;
+$border-color-5: 			    #c8c8c8;
+
+//-------------------- Line Height Variables --------------------//
+$line-height-base:              1.5;
+$line-height-large:           	1.8;
+$line-height-none:           	1;
+
+//-------------------- Font Families --------------------//
+$font-main: 					'Poppins', Helvetica, sans-serif;
+
+//-------------------- Font Sizes --------------------//
+$font-size-base:                0.875rem;
+
+//-------------------- Responsive sizes -------------------- //
+$large-device-width: 1199px; // Large devices (desktops, less than 1200px)
+$medium-device-width: 991px; // Medium devices (tablets, less than 992px)
+$small-device-width: 767px;	// Small devices (landscape phones, less than 768px)
+$extra-small-device-width: 575px;	// Extra small devices (portrait phones, less than 576px)
