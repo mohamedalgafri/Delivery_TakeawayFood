@@ -61,13 +61,24 @@
     margin-bottom: 15px;
   }
 }
-.coco{
-  
-}
+
+.mfp-arrow.mfp-arrow-left, .mfp-arrow.mfp-arrow-right {
+  font-family: 'ElegantIcons';
+  font-size: 38px;
+  line-height: 1;
+  left: 0;}
+
 .score {
   position: relative;
   left: 680px;
-  top:50px;
+  top:-260px;
+}
+@media (max-width: 767px) {
+  .score {
+    position: relative;
+    left: 680px;
+    top:50px;
+  }
 }
 .detail_page_head .rating .score span {
   top: 5px;
@@ -114,6 +125,7 @@
     font-size: 1.125rem;
   }
 }
+
 
 .pictures {
   text-align: left;
@@ -888,13 +900,37 @@ a.menu_item:hover h3 {
   }
 }
 
+.mainorder li{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.mainorder li span{
+  margin-right: 5px;
+}
+
+
+.box_order .clearfix li span{
+  margin-right: 10px;
+}
+
+.box_order .main .clearli li{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+.clearfix li{
+  display: flex;
+}
 .dropdown {
   border: 1px dotted #c8c8c8;
   padding: 0;
   margin-bottom: 5px;
 }
 .dropdown a {
-  padding: 15px 15px 12px 15px;
+  padding: 15px 40px 12px 15px;
   line-height: 1;
   color: #444;
   font-weight: 500;
@@ -946,6 +982,7 @@ a.menu_item:hover h3 {
 
 .dropdown.time a:after {
   content: '\0057';
+  margin-right: 4px;
 }
 
 .dropdown.time {
@@ -956,6 +993,7 @@ a.menu_item:hover h3 {
   font-family: "ElegantIcons";
   content: "\e023";
   font-weight: 300;
+  margin-right: 4px;
 }
 
 .radio_select ul {
@@ -1066,7 +1104,7 @@ a.menu_item:hover h3 {
   width: 40px;
   height: 40px;
   text-align: center;
-  left: 50%;
+  right: 50%;
   padding: 5px;
   border: none;
   margin-left: -20px;

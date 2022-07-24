@@ -584,7 +584,7 @@ a.address:hover {
 }
 
 .rangeslider--vertical .rangeslider__handle {
-  left: -10px;
+  right: -10px;
   touch-action: pan-x;
   -ms-touch-action: pan-x;
 }

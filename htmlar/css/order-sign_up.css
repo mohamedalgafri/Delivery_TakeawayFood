@@ -70,7 +70,9 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
+.clearfix li{
+  display: flex;
+}
 
 .payment_select {
   background-color: #eeeeee;
